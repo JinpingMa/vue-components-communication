@@ -1,5 +1,7 @@
 # vue-components-communication
 
+演示六种vue组件间通信方式，覆盖父子、兄弟、跨级情形。
+
 ## Project setup
 ```
 yarn install
