@@ -7,7 +7,7 @@
       window: 0,
       componentsList: [
         'ComuPropsEmit',
-        'ComuPropsEmit',
+        'ComuEventBus',
         'ComuPropsEmit',
         'ComuPropsEmit',
         'ComuPropsEmit',
@@ -54,6 +54,7 @@
           <v-window-item
             v-for="n in length"
             :key="n"
+            style="max-height: calc(100vh - 48px);overflow:auto;"
           >
             <component :is="componentsList[n-1]"></component>
           </v-window-item>
