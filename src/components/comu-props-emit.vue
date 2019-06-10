@@ -16,7 +16,15 @@
         </v-layout>
         <div>父组件通过<code class="code-text">props</code>传递值到子组件，子组件通过事件将值传递到父组件(<code class="code-text">$emit</code>触发)</div>
         <p>传入子组件的值为：
-          <span class="colorful-text">{{count}}</span>
+          <v-text-field
+            v-model="count"
+            style="display:inline-block;"
+            label="Solo"
+            placeholder="请输入数字"
+            single-line
+            type="number"
+            clearable
+          ></v-text-field>
         </p>
         <ChildCom :init-num="count" @emitFromChild="handleChildEmit"></ChildCom>
       </v-card-text>

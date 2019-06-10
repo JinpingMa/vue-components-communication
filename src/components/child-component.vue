@@ -26,16 +26,16 @@
     name: '',
     props: {
       initNum: {
-        type: Number,
+        type: [Number, String],
         default: 0
       }
     },
     methods: {
       plusNum () {
-        this.$emit('emitFromChild', this.initNum + 1)
+        this.$emit('emitFromChild', Number(this.initNum) + 1)
       },
       minusNum () {
-        this.$emit('emitFromChild', this.initNum - 1)
+        this.$emit('emitFromChild', Number(this.initNum) - 1)
       }
     }
   }

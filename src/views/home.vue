@@ -1,7 +1,7 @@
 <script>
-  import ComuPropsEmit from '../components/comu-props-emit'
+  // import ComuPropsEmit from '../components/comu-props-emit'
   export default {
-    components: {ComuPropsEmit},
+    // components: {ComuPropsEmit},
     data: () => ({
       length: 6,
       window: 0,
@@ -9,7 +9,7 @@
         'ComuPropsEmit',
         'ComuEventBus',
         'ComuAttrsListener',
-        'ComuPropsEmit',
+        'ComuProvideInject',
         'ComuPropsEmit',
         'ComuPropsEmit'
       ]
