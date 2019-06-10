@@ -8,15 +8,12 @@
       componentsList: [
         'ComuPropsEmit',
         'ComuEventBus',
-        'ComuPropsEmit',
+        'ComuAttrsListener',
         'ComuPropsEmit',
         'ComuPropsEmit',
         'ComuPropsEmit'
       ]
-    }),
-    created () {
-      // debugger
-    }
+    })
   }
 </script>
 
@@ -63,3 +60,7 @@
     </v-layout>
   </v-app>
 </template>
+
+<style lang="scss">
+  @import "@design";
+</style>

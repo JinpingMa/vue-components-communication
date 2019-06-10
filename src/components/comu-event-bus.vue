@@ -14,7 +14,13 @@
           <v-avatar color="grey" class="mr-3"></v-avatar>
           <strong class="title">最外层组件</strong>
         </v-layout>
-        <P>中央事件总线通过$emit / $on传递和接收值，$emit触发事件传递值， $on监听事件来接收值</P>
+        <p>中央事件总线通过
+          <code class="code-text">$emit / $on</code>
+          传递和接收值，
+          <code class="code-text">$emit</code>
+          触发事件传递值，
+          <code class="code-text">$on</code>
+          监听事件来接收值</p>
         <P>点击触发按钮后所有监听该事件的组件都可以收到值</P>
         <p></p>
         <v-layout row wrap>

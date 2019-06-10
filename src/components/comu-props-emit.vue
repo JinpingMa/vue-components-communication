@@ -14,9 +14,9 @@
           <v-avatar color="grey" class="mr-3"></v-avatar>
           <strong class="title">父组件</strong>
         </v-layout>
-        <div>父组件通过props传递值到子组件，子组件通过事件将值传递到父组件($emit触发)</div>
+        <div>父组件通过<code class="code-text">props</code>传递值到子组件，子组件通过事件将值传递到父组件(<code class="code-text">$emit</code>触发)</div>
         <p>传入子组件的值为：
-          <v-btn flat large color="red">{{count}}</v-btn>
+          <span class="colorful-text">{{count}}</span>
         </p>
         <ChildCom :init-num="count" @emitFromChild="handleChildEmit"></ChildCom>
       </v-card-text>
@@ -39,7 +39,3 @@
     }
   }
 </script>
-
-<style>
-
-</style>
