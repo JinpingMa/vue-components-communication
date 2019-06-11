@@ -4,7 +4,7 @@
       color="green"
       dark
     >
-      <v-toolbar-title>子组件{{title1}}</v-toolbar-title>
+      <v-toolbar-title>子组件{{title2}}</v-toolbar-title>
     </v-toolbar>
     <v-card>
       <v-card-text>
@@ -16,23 +16,18 @@
           父组件传入的值$listeners有:
           <span class="colorful-text">{{Object.keys($listeners).join(',  ')}}</span>
         </p>
-        <v-btn fab color="orange" :data-data="'component'+title1" v-on="$listeners">点击</v-btn>
-        <child-com v-bind="$attrs" v-on="listeners"></child-com>
+        <v-btn fab color="orange" :data-data="'component'+title2" v-on="listeners">点击</v-btn>
       </v-card-text>
     </v-card>
   </v-content>
 </template>
 
 <script>
-  import childCom from './attrs-listener-childl2'
   export default {
     name: '',
-    components: {
-      childCom
-    },
     inheritAttrs: false,
     props: {
-      title1: {
+      title2: {
         type: String,
         default: ''
       }

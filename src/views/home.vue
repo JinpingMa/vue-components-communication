@@ -10,7 +10,7 @@
         'ComuEventBus',
         'ComuAttrsListener',
         'ComuProvideInject',
-        'ComuPropsEmit',
+        'ComuVuex',
         'ComuPropsEmit'
       ]
     })
