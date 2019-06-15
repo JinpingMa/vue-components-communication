@@ -11,7 +11,7 @@
         'ComuAttrsListener',
         'ComuProvideInject',
         'ComuVuex',
-        'ComuPropsEmit'
+        'ComuParentChildrenRef'
       ]
     })
   }
